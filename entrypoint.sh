@@ -29,6 +29,11 @@ mkdir -p /var/cache/fontconfig
 chown abc:abc /var/cache/fontconfig
 gosu abc fc-cache -f
 
+# icons cache
+mkdir -p /opt/app/icons
+chown abc:abc /opt/app/icons
+chmod 777 /opt/app/icons
+
 # dotnet envs
 export DOTNET_BUNDLE_EXTRACT_BASE_DIR=/tmp
 export FONTCONFIG_CACHE=/var/cache/fontconfig
